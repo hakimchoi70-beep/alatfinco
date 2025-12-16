@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Statements | Alatfinco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+    }
+    header {
+      background: #0a7d4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .filters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #f0f5f2;
+    }
+    .credit {
+      color: green;
+      font-weight: bold;
+    }
+    .debit {
+      color: red;
+      font-weight: bold;
+    }
+    .btn {
+      margin-top: 15px;
+      background: #0a7d4f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .print {
+      background: #444;
+    }
+
+    @media print {
+      body { background: white; }
+      .btn { display: none; }
+      header { color: black; background: none; }
+      .box { box-shadow: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Bank Statements</h2>
+  <p>Account Number: ****4829</p>
+</header>
+
+<div class="container">
+  <div class="box">
+
+    <div class="filters">
+      <label>
+        From:
+        <input type="date">
+      </label>
+      <label>
+        To:
+        <input type="date">
+      </label>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-01-10</td>
+          <td>Salary Credit</td>
+          <td class="credit">Credit</td>
+          <td class="credit">$3,200.00</td>
+          <td>$12,450.00</td>
+        </tr>
+        <tr>
+          <td>2025-01-08</td>
+          <td>ATM Withdrawal</td>
+          <td class="debit">Debit</td>
+          <td class="debit">-$200.00</td>
+          <td>$9,250.00</td>
+        </tr>
+        <tr>
+          <td>2025-01-05</td>
+          <td>Transfer to Jane Smith</td>
+          <td class="debit">Debit</td>
+          <td class="debit">-$1,500.00</td>
+          <td>$9,450.00</td>
+        </tr>
+        <tr>
+          <td>2025-01-03</td>
+          <td>Card Payment</td>
+          <td class="debit">Debit</td>
+          <td class="debit">-$85.00</td>
+          <td>$10,950.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn print" onclick="window.print()">
+      🖨 Print / Save Statement
+    </button>
+
+    <button class="btn" onclick="location.href='dashboard.html'">
+      Back to Dashboard
+    </button>
+
+  </div>
+</div>
+
+</body>
+</html>
