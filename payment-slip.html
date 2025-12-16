@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Slip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+    }
+
+    .slip {
+      background: white;
+      max-width: 420px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0a7d4f;
+      margin-bottom: 5px;
+    }
+
+    .status {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .label {
+      color: #666;
+    }
+
+    .value {
+      font-weight: bold;
+    }
+
+    .btn {
+      margin-top: 15px;
+      background: #0a7d4f;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .print {
+      background: #444;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: white;
+      }
+      .btn {
+        display: none;
+      }
+      .slip {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="slip">
+  <h2>ALATFINCO BANKING INC</h2>
+  <div class="status">✔ Payment Successful</div>
+
+  <div class="row">
+    <div class="label">Reference ID</div>
+    <div class="value">ALF-902184</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Sender</div>
+    <div class="value">John Doe</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Receiver</div>
+    <div class="value">Jane Smith</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Bank</div>
+    <div class="value">International Bank</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Amount</div>
+    <div class="value">$2,500.00</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Date</div>
+    <div class="value">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+  </div>
+
+  <button class="btn print" onclick="window.print()">
+    🖨 Print Payment Slip
+  </button>
+
+  <button class="btn" onclick="location.href='dashboard.html'">
+    Back to Dashboard
+  </button>
+</div>
+
+</body>
+</html>
