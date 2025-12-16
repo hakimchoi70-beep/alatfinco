@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | Alatfinco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 25px;
+      width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0a7d4f;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+    }
+    button {
+      background: #0a7d4f;
+      color: white;
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Login</h2>
+  <input id="user" placeholder="Username">
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+  function login() {
+    if (
+      document.getElementById("user").value === "demo" &&
+      document.getElementById("pass").value === "1234"
+    ) {
+      location.href = "dashboard.html";
+    } else {
+      alert("Wrong login (demo / 1234)");
+    }
+  }
+</script>
+
+</body>
+</html>
