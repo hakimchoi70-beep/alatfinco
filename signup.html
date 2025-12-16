@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account | Alatfinco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 25px;
+      width: 360px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0a7d4f;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #0a7d4f;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      margin-top: 10px;
+    }
+    a {
+      color: #0a7d4f;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Create Account</h2>
+
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email Address" required>
+  <input type="text" placeholder="Username" required>
+  <input type="password" placeholder="Password" required>
+
+  <select>
+    <option>Select Account Type</option>
+    <option>Savings Account</option>
+    <option>Current Account</option>
+  </select>
+
+  <button onclick="createAccount()">Create Account</button>
+
+  <p class="note">
+    Already have an account?
+    <a href="login.html">Login</a>
+  </p>
+
+  <p class="note">
+    ⚠️ Demo only. No real account is created.
+  </p>
+</div>
+
+<script>
+  function createAccount() {
+    alert("Account created successfully (demo)");
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>
