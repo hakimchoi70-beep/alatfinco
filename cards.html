@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards & ATM | Alatfinco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f7fb;
+      margin: 0;
+    }
+    header {
+      background: #0a7d4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card-box {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .bank-card {
+      background: linear-gradient(135deg, #0a7d4f, #065f3d);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+    .bank-card p {
+      margin: 5px 0;
+      letter-spacing: 2px;
+    }
+    button {
+      background: #0a7d4f;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .back {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Cards & ATM Services</h2>
+</header>
+
+<div class="container">
+
+  <div class="card-box">
+    <h3>Your Debit Card</h3>
+
+    <div class="bank-card">
+      <h4>ALATFINCO BANK</h4>
+      <p>**** **** **** 4829</p>
+      <p>VALID: 08/29</p>
+      <p>RUTH D. CHIPOGO</p>
+    </div>
+
+    <button>Freeze Card</button>
+    <button>Request New Card</button>
+  </div>
+
+  <div class="card-box">
+    <h3>ATM Services</h3>
+    <ul>
+      <li>✔ ATM Withdrawal</li>
+      <li>✔ Balance Inquiry</li>
+      <li>✔ Mini Statement</li>
+      <li>✔ International ATM Access</li>
+    </ul>
+
+    <button>Find Nearby ATM</button>
+  </div>
+
+  <button class="back" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+
+</div>
+
+</body>
+</html>
