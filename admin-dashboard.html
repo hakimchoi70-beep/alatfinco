@@ -1,116 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Admin Dashboard | Alatfinco</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    body {
-      font-family: Arial;
-      background: #f4f7fb;
-      margin: 0;
-    }
-    header {
-      background: #0a7d4f;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-    th, td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background: #eef5f1;
-    }
-    .btn {
-      background: #c0392b;
-      color: white;
-      border: none;
-      padding: 10px;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-
 <body>
 
 <header>
   <h2>Admin Dashboard</h2>
   <p>Alatfinco Banking Inc</p>
+
+  <nav style="margin-top:10px;">
+    <a href="admin-dashboard.html" style="color:white; margin:0 10px;">Dashboard</a>
+    <a href="admin-customers.html" style="color:white; margin:0 10px;">Customers</a>
+    <a href="admin-transfers.html" style="color:white; margin:0 10px;">Transfers</a>
+    <a href="admin-statements.html" style="color:white; margin:0 10px;">Statements</a>
+    <a href="admin-login.html" style="color:#ffdddd; margin:0 10px;">Logout</a>
+  </nav>
 </header>
-
-<div class="container">
-
-  <div class="card">
-    <h3>Registered Customers</h3>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Username</th>
-        <th>Status</th>
-      </tr>
-      <tr>
-        <td>Ruth D. Chipogo</td>
-        <td>ruth01</td>
-        <td>Active</td>
-      </tr>
-      <tr>
-        <td>John Doe</td>
-        <td>john23</td>
-        <td>Pending</td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <h3>Recent Transfers</h3>
-    <table>
-      <tr>
-        <th>Reference</th>
-        <th>Customer</th>
-        <th>Amount</th>
-        <th>Status</th>
-      </tr>
-      <tr>
-        <td>ALF-902184</td>
-        <td>Ruth D.</td>
-        <td>$2,500</td>
-        <td>Completed</td>
-      </tr>
-      <tr>
-        <td>ALF-774121</td>
-        <td>John Doe</td>
-        <td>$1,200</td>
-        <td>Pending</td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <button class="btn" onclick="location.href='admin-login.html'">
-      Logout
-    </button>
-  </div>
-
-</div>
-
-</body>
-</html>
