@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PayPal Withdrawal | Alatfinco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body { font-family: Arial; background:#f4f7fb; margin:0; }
+    header { background:#003087; color:white; padding:20px; text-align:center; }
+    .container { padding:20px; max-width:500px; margin:auto; }
+    .box {
+      background:white; padding:20px; border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    input {
+      width:100%; padding:12px; margin:10px 0;
+      border-radius:5px; border:1px solid #ccc;
+    }
+    button {
+      background:#003087; color:white; border:none;
+      padding:12px; width:100%; border-radius:5px;
+      font-size:16px;
+    }
+    .note { font-size:12px; color:#777; margin-top:10px; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>PayPal Withdrawal</h2>
+</header>
+
+<div class="container">
+  <div class="box">
+    <label>PayPal Email</label>
+    <input type="email" placeholder="example@paypal.com">
+
+    <label>Amount</label>
+    <input type="number" placeholder="Enter amount">
+
+    <label>Description</label>
+    <input type="text" placeholder="Optional note">
+
+    <button onclick="location.href='transfer-verify.html'">
+      Continue
+    </button>
+
+    <p class="note">
+      ⚠️ Demo withdrawal only. No real PayPal transaction.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
